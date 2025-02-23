@@ -1,3 +1,4 @@
+/** An enumeration of the icon types available */
 export enum IconTypes {
   ChevronRight = "chevron-right",
   ChevronDown = "chevron-down",
@@ -5,9 +6,13 @@ export enum IconTypes {
 }
 
 type IconProps = {
+  /** Which icon to display */
   type: IconTypes;
 };
 
+/**
+ * A basic Icon component to contain the various SVG icons used in the library.
+ */
 export const Icon = ({ type }: IconProps) => {
   switch (type) {
     case IconTypes.ChevronRight:

@@ -1,9 +1,13 @@
 import type { Meta, StoryObj } from "@storybook/react";
-import { DEFAULT_CONTACT } from "../../constants/story-constants";
+import {
+  DEFAULT_CONTACT,
+  DEFAULT_CONTACT_LIST,
+} from "../../constants/story-constants";
 import { SelectedContactsProvider } from "../../contexts/selected-contacts-context/selected-contacts.context";
 import { ContactListItem } from "../contact-list-item/contact-list-item";
 import { fn } from "@storybook/test";
 import { SectionHeader } from "./section-header";
+import { ContactList } from "../contact-list/contact-list";
 
 const meta = {
   title: "Example/SectionHeader",
@@ -23,7 +27,7 @@ const meta = {
   render: (args) => (
     <SelectedContactsProvider onSelectedContactsChange={fn()}>
       <SectionHeader {...args}>
-        <ContactListItem contact={DEFAULT_CONTACT} />
+        <ContactList contacts={DEFAULT_CONTACT_LIST} displayEmail={false} />
       </SectionHeader>
     </SelectedContactsProvider>
   ),
@@ -36,11 +40,14 @@ export const Default: Story = {
   args: {
     headerName: "Attended",
     children: (
-      <>
-        <ContactListItem contact={DEFAULT_CONTACT} />
-        <ContactListItem contact={DEFAULT_CONTACT} />
-        <ContactListItem contact={DEFAULT_CONTACT} />
-      </>
+      <ContactList contacts={DEFAULT_CONTACT_LIST} displayEmail={false} />
     ),
+  },
+};
+
+export const WithDisplayEmail: Story = {
+  args: {
+    headerName: "Attended",
+    children: <ContactList contacts={DEFAULT_CONTACT_LIST} displayEmail />,
   },
 };

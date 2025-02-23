@@ -10,8 +10,15 @@ import { Icon, IconTypes } from "../icon/icon";
 import { Section, SectionContainer } from "../section/section";
 
 type SectionHeaderProps = {
+  /** The name of the current header */
   headerName: string;
 };
+/**
+ * Displays a collapsable section header.
+ * When the header is clicked, the section toggle it's state of expanded or collapsed.
+ *
+ * Used in the `SearchableList` component.
+ */
 export const SectionHeader = ({
   headerName,
   children,
@@ -47,11 +54,15 @@ const Header = styled.div`
   border-width: 1px 0px 1px 0px;
   border-style: solid;
   border-color: ${BORDER_COLOR};
+
+  max-width: 400px;
 `;
 
 const SectionHeaderContainer = styled.div<{ $open?: boolean }>`
   display: flex;
   flex-direction: column;
+
+  max-width: 400px;
 
   // newer psuedo-class, may not be appropriate depending on what browser versions need to be supported. But it's neat!
   &:has(> ${Header}:hover) {

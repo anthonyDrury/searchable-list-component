@@ -4,8 +4,13 @@ import { CONTENT_BACKGROUND, TEXT_BLACK } from "../../constants/constants";
 import { Icon, IconTypes } from "../icon/icon";
 
 type SearchFieldProps = {
+  /** The callback to call when the SearchField's input value changes */
   onSearch: (searchTerm: string) => void;
 };
+/**
+ * A basic search field component.
+ * Used to search for contacts in the `ContactList` component.
+ */
 export const SearchField = ({ onSearch }: SearchFieldProps) => {
   const onSearchChange = useCallback(
     (event: React.ChangeEvent<HTMLInputElement>) => {

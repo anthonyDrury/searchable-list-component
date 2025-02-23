@@ -33,6 +33,7 @@ type Story = StoryObj<typeof meta>;
 export const Default: Story = {
   args: {
     contact: DEFAULT_CONTACT,
+    displayEmail: false,
   },
 };
 
@@ -46,6 +47,7 @@ export const DisplayEmail: Story = {
 export const Enabled: Story = {
   args: {
     contact: DEFAULT_CONTACT,
+    displayEmail: false,
   },
 };
 

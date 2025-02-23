@@ -13,9 +13,18 @@ import { SelectedContactsContext } from "../../contexts/selected-contacts-contex
 import { Contact } from "../../types/types";
 
 type ContactListItemProps = {
+  /** The contact to display */
   contact: Contact;
+  /** Whether to display the contact's email */
   displayEmail: boolean;
 };
+
+/**
+ * An item displaying a contact's details.
+ * Also allows selecting and unselecting the contact, which is managed by the `SelectedContactsContext`.
+ *
+ * Used in the `ContactList` component.
+ */
 export const ContactListItem = ({
   contact,
   displayEmail,
