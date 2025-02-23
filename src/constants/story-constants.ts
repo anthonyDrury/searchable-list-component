@@ -9,7 +9,6 @@ export const DEFAULT_CONTACT: Contact = {
   attended: false,
 };
 
-/// list of 10 contacts
 export const DEFAULT_CONTACT_LIST: Contact[] = [
   {
     id: "00000",

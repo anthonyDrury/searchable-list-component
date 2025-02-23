@@ -18,7 +18,6 @@ type SearchableListProps = {
   contacts: Contact[];
 };
 /**
- *
  * A combined component that displays a list of searchable and selectable contacts, filtered by attendance.
  * Allows filtering via a search field (`SearchField`). Which can be used to search for contacts by name, or email if `displayEmail` is set to true.
  * Allows selecting contacts by clicking on the `ContactListItem` components within the attendance lists.
@@ -30,6 +29,7 @@ export const SearchableList = ({
 }: SearchableListProps) => {
   const [searchTerm, setSearchTerm] = useState("");
 
+  /** The contacts filtered and categorised by attendance  */
   const [attendedContacts, absentContacts] = useMemo(
     () => filterContacts(contacts, searchTerm, displayEmail),
     [contacts, searchTerm, displayEmail]

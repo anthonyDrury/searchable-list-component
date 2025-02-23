@@ -15,7 +15,8 @@ type SectionHeaderProps = {
 };
 /**
  * Displays a collapsable section header.
- * When the header is clicked, the section toggle it's state of expanded or collapsed.
+ * When the header is clicked, the section toggles it's state of expanded or collapsed.
+ * When expanded the children are shown, when collapsed the children are hidden.
  *
  * Used in the `SearchableList` component.
  */

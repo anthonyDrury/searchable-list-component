@@ -28,8 +28,10 @@ This will install the projects dependencies locally.
 
 ### `npm run storybook`
 
-This will launch Storybook locally and you will be able to view and interact with the components stories.
+This will launch Storybook locally and you will be able to view and interact with the component's stories.
 
-### `npm test -- --coverage`
+### `npm run test`
 
 This will launch the Jest tests in interactive mode and display the code coverage results. Currently there is 100% code coverage. Though this does not mean the tests couldn't be improved. Ideally the tests would also cover the individual components and not only the `searchable-list` component. The format also could be improved, as well as testing specific functionalities in combination with each other.
+
+![Code coverage results currently](public/code_coverage.png)

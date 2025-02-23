@@ -11,7 +11,7 @@ import {
 describe("SearchableList", () => {
   const onSelectedContactsChange = jest.fn();
 
-  it("matches the default snapshot", () => {
+  it("Matches the default snapshot", () => {
     const { container } = render(
       <SearchableList
         contacts={DEFAULT_CONTACT_LIST}
@@ -21,7 +21,7 @@ describe("SearchableList", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("matches the email display snapshot", () => {
+  it("Matches the email display snapshot", () => {
     const { container } = render(
       <SearchableList
         contacts={DEFAULT_CONTACT_LIST}
@@ -32,7 +32,7 @@ describe("SearchableList", () => {
     expect(container).toMatchSnapshot();
   });
 
-  it("renders the Searchable lists and all details", () => {
+  it("Renders the Searchable lists and all details", () => {
     render(
       <SearchableList
         contacts={DEFAULT_CONTACT_LIST}
@@ -53,7 +53,7 @@ describe("SearchableList", () => {
     });
   });
 
-  it("renders the Searchable lists and all details with displayed email", () => {
+  it("Renders the Searchable lists and all details with displayed email", () => {
     render(
       <SearchableList
         contacts={DEFAULT_CONTACT_LIST}
@@ -137,7 +137,7 @@ describe("SearchableList", () => {
     expect(contactName).toBeInTheDocument();
   });
 
-  it("Selecting a contact applies the correct selected styles", () => {
+  it("Applies the correct selected styles when a contact is selected", () => {
     render(
       <SearchableList
         contacts={DEFAULT_CONTACT_LIST}
@@ -168,7 +168,7 @@ describe("SearchableList", () => {
     expect(displayImage).toHaveAttribute("src", DEFAULT_CONTACT_IMAGE_URL);
   });
 
-  it("Collapsing the header hides the list", () => {
+  it("Should hide the list when the header is collapsed, and display it when it's expanded", () => {
     const [attended, absent] = DEFAULT_CONTACT_LIST.reduce<
       [Contact[], Contact[]]
     >(

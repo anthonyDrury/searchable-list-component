@@ -34,12 +34,12 @@ export const ContactListItem = ({
   );
 
   const isContactEnabled = useMemo(
-    () => isContactSelected(contact.id),
+    () => !!isContactSelected?.(contact.id),
     [contact.id, isContactSelected]
   );
 
   const onContactClick = useCallback(
-    () => toggleSelectedContact(contact.id),
+    () => toggleSelectedContact?.(contact.id),
     [contact.id, toggleSelectedContact]
   );
 

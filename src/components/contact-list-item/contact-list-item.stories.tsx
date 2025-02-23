@@ -43,17 +43,3 @@ export const DisplayEmail: Story = {
     displayEmail: true,
   },
 };
-
-export const Enabled: Story = {
-  args: {
-    contact: DEFAULT_CONTACT,
-    displayEmail: false,
-  },
-};
-
-export const EnabledWithDisplayEmail: Story = {
-  args: {
-    contact: DEFAULT_CONTACT,
-    displayEmail: true,
-  },
-};

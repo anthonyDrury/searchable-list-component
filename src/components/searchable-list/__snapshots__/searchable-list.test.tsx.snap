@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`SearchableList matches the default snapshot 1`] = `
+exports[`SearchableList Matches the default snapshot 1`] = `
 .c10 {
   height: 36px;
   width: 36px;
@@ -388,7 +388,7 @@ exports[`SearchableList matches the default snapshot 1`] = `
 </div>
 `;
 
-exports[`SearchableList matches the email display snapshot 1`] = `
+exports[`SearchableList Matches the email display snapshot 1`] = `
 .c10 {
   height: 36px;
   width: 36px;
