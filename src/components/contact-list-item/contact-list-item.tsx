@@ -21,7 +21,7 @@ type ContactListItemProps = {
 
 /**
  * An item displaying a contact's details.
- * Also allows selecting and unselecting the contact, which is managed by the `SelectedContactsContext`.
+ * Also allows selecting and unselecting the contact via clicking the `contact-list-item`, which is managed by the `SelectedContactsContext`.
  *
  * Used in the `ContactList` component.
  */
