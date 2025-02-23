@@ -1,0 +1,823 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SearchableList matches the default snapshot 1`] = `
+.c10 {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+.c11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #20374B;
+}
+
+.c9 {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 52px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 8px;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.c9:hover {
+  background-color: #F2F5F7;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  gap: 4px;
+  font-size: 14px;
+  color: #20374B;
+  padding: 8px 16px;
+  max-width: 400px;
+}
+
+.c2 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #20374B;
+  border: none;
+  outline: none;
+}
+
+.c2 textarea:focus,
+.c2 input:focus {
+  outline: none;
+}
+
+.c7 {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.c5 {
+  cursor: pointer;
+  height: 37px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F2F5F7;
+  line-height: 20px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #E4E5E8;
+}
+
+.c3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c3:has(> .c4:hover) .c6,
+.c3:has(> .c4:hover) .c8,
+.c3:has(> .c4:hover) {
+  background: #F2F5F7;
+}
+
+.c3:has(> .c4:hover) >.c4 {
+  background: #F2F5F7;
+}
+
+.c0 {
+  background-color: #FFFFFF;
+  max-width: 400px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        fill="none"
+        height="15"
+        viewBox="0 0 15 15"
+        width="15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.2589 9.66719H10.9172L14.4505 13.2172C14.7922 13.5589 14.7922 14.1172 14.4505 14.4589C14.1089 14.8005 13.5505 14.8005 13.2089 14.4589L9.66719 10.9172V10.2589L9.44219 10.0255C8.27552 11.0255 6.68385 11.5422 4.99219 11.2589C2.67552 10.8672 0.825521 8.93385 0.542188 6.60052C0.108855 3.07552 3.07552 0.108855 6.60052 0.542188C8.93385 0.825521 10.8672 2.67552 11.2589 4.99219C11.5422 6.68385 11.0255 8.27552 10.0255 9.44219L10.2589 9.66719ZM2.16719 5.91719C2.16719 7.99219 3.84219 9.66719 5.91719 9.66719C7.99219 9.66719 9.66719 7.99219 9.66719 5.91719C9.66719 3.84219 7.99219 2.16719 5.91719 2.16719C3.84219 2.16719 2.16719 3.84219 2.16719 5.91719Z"
+          fill="#8E9AA5"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <input
+        class="c2"
+        placeholder="Search"
+      />
+    </div>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4 c5"
+      >
+        <p>
+          Attended
+        </p>
+        <svg
+          fill="none"
+          height="6"
+          viewBox="0 0 6 10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.53243 0.259112L5.00447 3.69622L8.47651 0.259112C8.8255 -0.0863705 9.38926 -0.0863705 9.73825 0.259112C10.0872 0.604594 10.0872 1.16268 9.73825 1.50816L5.63087 5.57422C5.28187 5.9197 4.71811 5.9197 4.36912 5.57422L0.261732 1.50816C0.0941683 1.34266 0 1.11796 0 0.883637C0 0.649314 0.0941683 0.424617 0.261732 0.259112C0.610726 -0.077512 1.18343 -0.0863705 1.53243 0.259112Z"
+            fill="#8E9AA5"
+          />
+        </svg>
+      </div>
+      <div
+        class="c6 c7"
+      >
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Alice Smith's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_2.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Alice Smith
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Charlie Brown's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_4.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Charlie Brown
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Eve Adams's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_6.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Eve Adams
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Grace Hopper's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_8.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Grace Hopper
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4 c5"
+      >
+        <p>
+          Absent
+        </p>
+        <svg
+          fill="none"
+          height="6"
+          viewBox="0 0 6 10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.53243 0.259112L5.00447 3.69622L8.47651 0.259112C8.8255 -0.0863705 9.38926 -0.0863705 9.73825 0.259112C10.0872 0.604594 10.0872 1.16268 9.73825 1.50816L5.63087 5.57422C5.28187 5.9197 4.71811 5.9197 4.36912 5.57422L0.261732 1.50816C0.0941683 1.34266 0 1.11796 0 0.883637C0 0.649314 0.0941683 0.424617 0.261732 0.259112C0.610726 -0.077512 1.18343 -0.0863705 1.53243 0.259112Z"
+            fill="#8E9AA5"
+          />
+        </svg>
+      </div>
+      <div
+        class="c6 c7"
+      >
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="John Doe's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_0.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              John Doe
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Jane Doe's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_1.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Jane Doe
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Bob Johnson's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_3.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Bob Johnson
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Diana Prince's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_5.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Diana Prince
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Frank Castle's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_7.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Frank Castle
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Hank Pym's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_9.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Hank Pym
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Ivy Wayne's display image"
+            class="c10"
+            src="/default_contact_display_image.jpg"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Ivy Wayne
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SearchableList matches the email display snapshot 1`] = `
+.c10 {
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+}
+
+.c11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.c12 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #20374B;
+}
+
+.c13 {
+  font-size: 13px;
+  color: #5A6D80;
+}
+
+.c9 {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 52px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+  padding: 8px;
+  gap: 12px;
+  max-width: 400px;
+}
+
+.c9:hover {
+  background-color: #F2F5F7;
+}
+
+.c1 {
+  background-color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  height: 48px;
+  gap: 4px;
+  font-size: 14px;
+  color: #20374B;
+  padding: 8px 16px;
+  max-width: 400px;
+}
+
+.c2 {
+  font-size: 14px;
+  line-height: 20px;
+  color: #20374B;
+  border: none;
+  outline: none;
+}
+
+.c2 textarea:focus,
+.c2 input:focus {
+  outline: none;
+}
+
+.c7 {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.c5 {
+  cursor: pointer;
+  height: 37px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 8px;
+  padding-left: 16px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #F2F5F7;
+  line-height: 20px;
+  border-width: 1px 0px 1px 0px;
+  border-style: solid;
+  border-color: #E4E5E8;
+}
+
+.c3 {
+  display: flex;
+  flex-direction: column;
+}
+
+.c3:has(> .c4:hover) .c6,
+.c3:has(> .c4:hover) .c8,
+.c3:has(> .c4:hover) {
+  background: #F2F5F7;
+}
+
+.c3:has(> .c4:hover) >.c4 {
+  background: #F2F5F7;
+}
+
+.c0 {
+  background-color: #FFFFFF;
+  max-width: 400px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <svg
+        fill="none"
+        height="15"
+        viewBox="0 0 15 15"
+        width="15"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          clip-rule="evenodd"
+          d="M10.2589 9.66719H10.9172L14.4505 13.2172C14.7922 13.5589 14.7922 14.1172 14.4505 14.4589C14.1089 14.8005 13.5505 14.8005 13.2089 14.4589L9.66719 10.9172V10.2589L9.44219 10.0255C8.27552 11.0255 6.68385 11.5422 4.99219 11.2589C2.67552 10.8672 0.825521 8.93385 0.542188 6.60052C0.108855 3.07552 3.07552 0.108855 6.60052 0.542188C8.93385 0.825521 10.8672 2.67552 11.2589 4.99219C11.5422 6.68385 11.0255 8.27552 10.0255 9.44219L10.2589 9.66719ZM2.16719 5.91719C2.16719 7.99219 3.84219 9.66719 5.91719 9.66719C7.99219 9.66719 9.66719 7.99219 9.66719 5.91719C9.66719 3.84219 7.99219 2.16719 5.91719 2.16719C3.84219 2.16719 2.16719 3.84219 2.16719 5.91719Z"
+          fill="#8E9AA5"
+          fill-rule="evenodd"
+        />
+      </svg>
+      <input
+        class="c2"
+        placeholder="Search"
+      />
+    </div>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4 c5"
+      >
+        <p>
+          Attended
+        </p>
+        <svg
+          fill="none"
+          height="6"
+          viewBox="0 0 6 10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.53243 0.259112L5.00447 3.69622L8.47651 0.259112C8.8255 -0.0863705 9.38926 -0.0863705 9.73825 0.259112C10.0872 0.604594 10.0872 1.16268 9.73825 1.50816L5.63087 5.57422C5.28187 5.9197 4.71811 5.9197 4.36912 5.57422L0.261732 1.50816C0.0941683 1.34266 0 1.11796 0 0.883637C0 0.649314 0.0941683 0.424617 0.261732 0.259112C0.610726 -0.077512 1.18343 -0.0863705 1.53243 0.259112Z"
+            fill="#8E9AA5"
+          />
+        </svg>
+      </div>
+      <div
+        class="c6 c7"
+      >
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Alice Smith's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_2.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Alice Smith
+            </p>
+            <p
+              class="c13"
+            >
+              alice@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Charlie Brown's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_4.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Charlie Brown
+            </p>
+            <p
+              class="c13"
+            >
+              charlie@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Eve Adams's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_6.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Eve Adams
+            </p>
+            <p
+              class="c13"
+            >
+              eve@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Grace Hopper's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_8.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Grace Hopper
+            </p>
+            <p
+              class="c13"
+            >
+              grace@example.com
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="c3"
+    >
+      <div
+        class="c4 c5"
+      >
+        <p>
+          Absent
+        </p>
+        <svg
+          fill="none"
+          height="6"
+          viewBox="0 0 6 10"
+          width="10"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.53243 0.259112L5.00447 3.69622L8.47651 0.259112C8.8255 -0.0863705 9.38926 -0.0863705 9.73825 0.259112C10.0872 0.604594 10.0872 1.16268 9.73825 1.50816L5.63087 5.57422C5.28187 5.9197 4.71811 5.9197 4.36912 5.57422L0.261732 1.50816C0.0941683 1.34266 0 1.11796 0 0.883637C0 0.649314 0.0941683 0.424617 0.261732 0.259112C0.610726 -0.077512 1.18343 -0.0863705 1.53243 0.259112Z"
+            fill="#8E9AA5"
+          />
+        </svg>
+      </div>
+      <div
+        class="c6 c7"
+      >
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="John Doe's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_0.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              John Doe
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Jane Doe's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_1.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Jane Doe
+            </p>
+            <p
+              class="c13"
+            >
+              test@test.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Bob Johnson's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_3.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Bob Johnson
+            </p>
+            <p
+              class="c13"
+            >
+              bob@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Diana Prince's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_5.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Diana Prince
+            </p>
+            <p
+              class="c13"
+            >
+              diana@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Frank Castle's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_7.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Frank Castle
+            </p>
+            <p
+              class="c13"
+            >
+              frank@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Hank Pym's display image"
+            class="c10"
+            src="/DISPLAY_IMAGE_9.png"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Hank Pym
+            </p>
+            <p
+              class="c13"
+            >
+              hank@example.com
+            </p>
+          </div>
+        </div>
+        <div
+          class="c8 c9"
+        >
+          <img
+            alt="Ivy Wayne's display image"
+            class="c10"
+            src="/default_contact_display_image.jpg"
+          />
+          <div
+            class="c11"
+          >
+            <p
+              class="c12"
+            >
+              Ivy Wayne
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

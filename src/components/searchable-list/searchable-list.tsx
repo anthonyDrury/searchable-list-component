@@ -22,8 +22,8 @@ export const SearchableList = ({
   const [searchTerm, setSearchTerm] = useState("");
 
   const [attendedContacts, absentContacts] = useMemo(
-    () => filterContacts(contacts, searchTerm),
-    [contacts, searchTerm]
+    () => filterContacts(contacts, searchTerm, displayEmail),
+    [contacts, searchTerm, displayEmail]
   );
 
   return (
@@ -53,12 +53,18 @@ export const SearchableList = ({
 
 const filterContacts = (
   contacts: Contact[],
-  searchTerm: string
+  searchTerm: string,
+  checkEmail: boolean
 ): [Contact[], Contact[]] =>
   contacts.reduce(([attended, absent], cur) => {
-    const filterMatch = searchTerm
-      ? cur.name?.toLowerCase().includes(searchTerm.toLowerCase())
-      : true;
+    const lowerCaseTerm = searchTerm.toLowerCase();
+
+    const nameMatch = cur.name?.toLowerCase().includes(lowerCaseTerm);
+    const emailMatch = checkEmail
+      ? cur?.email?.toLowerCase().includes(lowerCaseTerm)
+      : false;
+
+    const filterMatch = searchTerm ? nameMatch || emailMatch : true;
 
     if (filterMatch) {
       if (cur.attended) {

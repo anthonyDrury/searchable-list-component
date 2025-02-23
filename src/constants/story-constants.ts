@@ -10,7 +10,7 @@ export const DEFAULT_CONTACT: Contact = {
 };
 
 /// list of 10 contacts
-export const DEFAULT_CONTACT_LIST = [
+export const DEFAULT_CONTACT_LIST: Contact[] = [
   {
     id: "00000",
     name: "John Doe",
@@ -79,6 +79,13 @@ export const DEFAULT_CONTACT_LIST = [
     name: "Hank Pym",
     displayImageURL: "/DISPLAY_IMAGE_9.png",
     email: "hank@example.com",
+    attended: false,
+  },
+  {
+    id: "00010",
+    name: "Ivy Wayne",
+    displayImageURL: undefined,
+    email: undefined,
     attended: false,
   },
 ];

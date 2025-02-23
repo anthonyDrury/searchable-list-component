@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Storybook featuring the Searchable List Component.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a basic Create React App templated React app with Storybook. This was created for to fulfill the requirements of an interview challenge.
 
-## Available Scripts
+This uses Typescript, React, Styled components, Jest and Storybook per the parameters of the challenge.
+
+## Caveats and other improvements desired for real world applications:
+
+Currently there is no tooling installed locally to build and export the package as a component library. This wouldn't matter if the goal was to only use the components locally in the same repo. This was avoided as the challenge didn't require it.
+
+The theming via Styled Components could be drastically improved. I used very basic constant variables for some shared colouring, however ideally these and many other shared variables (layouts, colors, borders, etc) would be a part of a larger application theme. This would reduce code duplication and be much easier to integrate into individual components.
+
+Tests are limited only to the `searchable-list` component, as the challenge was focusing on that. However the test coverage is 100%. Ideally the tests would also be included on the other components, and utils. E2E tests (Cypress or Playwright) would ideally be added when the need arises for testing the entire stack.
+
+## Code coverage
+
+![Code coverage results](public/code_coverage.png)
+
+## Installing and running the application
+
+This assumes you have Node installed locally. The node version used for development was 10.7.0, I would suggest having at least that version.
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm i`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This will install the projects dependencies locally.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### `npm run storybook`
 
-### `npm test`
+This will launch Storybook locally and you will be able to view and interact with the components stories.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `npm test -- --coverage`
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+This will launch the Jest tests in interactive mode and display the code coverage results. Currently there is 100% code coverage. Though this does not mean the tests couldn't be improved. Ideally the tests would also cover the individual components and not only the `searchable-list` component. The format also could be improved, as well as testing specific functionalities in combination with each other.

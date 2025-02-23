@@ -14,11 +14,11 @@ import { Contact } from "../../types/types";
 
 type ContactListItemProps = {
   contact: Contact;
-  displayEmail?: boolean;
+  displayEmail: boolean;
 };
 export const ContactListItem = ({
   contact,
-  displayEmail = false,
+  displayEmail,
 }: ContactListItemProps) => {
   const { isContactSelected, toggleSelectedContact } = React.useContext(
     SelectedContactsContext
@@ -40,6 +40,7 @@ export const ContactListItem = ({
     <ContactContainer $enabled={isContactEnabled} onClick={onContactClick}>
       <ContactImage
         src={contact.displayImageURL || DEFAULT_CONTACT_IMAGE_URL}
+        alt={`${contact.name}'s display image`}
       />
       <ContactDetails>
         <ContactName>{contact.name}</ContactName>
